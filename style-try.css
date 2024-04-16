@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: "Poppins", sans-serif;
+}
+#main {
+    height:100vh;
+    width: 100%;
+
+}
+.svg-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.svg-container img{
+    background-position: center;
+    background-size: contain;
+    
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+#item-container{
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 80%;
+    height: 100vh;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    /* border: 2px solid rgba(20, 17, 17, 0.968); */
+    position: relative;
+    left: 24%;
+    top: 17%;
+    border-radius: 50%;
+}
+#logo img{
+    border-radius: 50%;
+}
+#item-container .logo-name{
+position: absolute;
+right: 35%;
+top: 33%;
+}
+#big-flex{
+    position: relative;
+    height: 60vh;
+    width: 50%;
+    background: #f5e6d1;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-55%);
+    box-shadow: 0px 0px 14px #000;
+    border-radius: 20px;
+}
+#big-flex .support{
+position: relative;
+height: 13vh;
+width: 90%;
+margin: 0 auto;
+background: #F5E6D1;
+top: 5%;
+box-shadow: 0px 0px 10px #000;
+border-radius: 10px;
+transition: background 0.5s ease-in-out ;
+
+}
+#big-flex .support>p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1rem;
+}
+#big-flex .support:hover{
+    background: #FFC94A;
+    color: white;
+    transform-origin: top center;
+    text-decoration: underline;
+    }
+#big-flex .tagname{
+    position: relative;
+height: 5vh;
+width: 90%;
+margin: 20px auto;
+background: #F5E6D1;
+top: 5%;
+box-shadow: 0px 0px 10px #000;
+border-radius: 10px;
+transition: background 0.3s ease-in-out ;
+
+}
+#big-flex .tagname p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.tagname p span i{
+     font-size: 1.9rem;
+     
+}
+#big-flex .tagname:hover{
+    background: #FFC94A;
+    box-shadow: 0px 0px 10px #000;
+    
+    color: white;
+    transform-origin: top center;
+
+    text-decoration: underline;
+}
+#flex-container{
+    position: relative;
+    height:27vh;
+    top:5%;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    
+}
+#flex-container .contact-us{
+    position: relative;
+    left: 0%;
+    width: 60%;
+    height:85%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #000;
+
+}
+
+#flex-container .contact-us .image{
+    position: absolute;
+    
+    top: 0%;
+    left: 50%;
+    height: 110px;
+    width: 170px;
+    overflow: hidden;
+    transform: translateX(-50%);
+}
+#flex-container .contact-us img{
+    position: absolute;
+    left:-10%;
+    top: -25%;
+    width: 160px;
+    background-size: cover;
+
+}
+#flex-container .contact-us .online{
+position: absolute;
+bottom: 4%;
+width: 100%;
+
+}
+.contact-us .online span{
+    display: block;
+    text-align: justify;
+    margin-left: 10px;
+}
+.online span a{
+    color: #000;
+    text-decoration: none;
+}
+#flex-container .socialMedia{
+    position: relative;
+    left: 0%;
+    width: 35%;
+    height:85%;
+    overflow: hidden;
+    /* background: #000; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #000;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.socialMedia>div{
+    height: 55px;
+    width: 55px;
+}
+.socialMedia a{
+    font-size: 3rem;
+}
+
+#complement{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    
+}
+#complement  p{
+    font-family: "Poppins", sans-serif;
+    margin: 1rem;
+    font-size: 0.8rem;
+    color: #000000;
+    text-shadow: 0px 0px 5px #ffffff;
+}
+
+#complement .star {
+
+   font-size: 1.9rem;
+   margin-top: 1rem;
+   color: white;
+   display: flex;
+   cursor: pointer; 
+}
+#complement .star .green{
+    color:#f6ea05e0;
+    text-shadow: 0px 0px 4px #f6ea05;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* For large devices (portrait smartphones) */
+  @media only screen and  (max-width: 414px) {
+    /* CSS styles for large devices */
+    .svg-container img{
+        display: none; 
+    }
+    .svg-container{
+        background-image: url('./Thank\ you.svg');
+        background-position:top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    #item-container{
+        position: absolute;
+        top: 2%;
+        height: 85vh;
+        width: 95%;
+    }
+    #logo{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 0%;
+        top: 7%;
+    }
+    #item-container .logo-name{
+        position: absolute;
+        right: 3%;
+        top: 33%;
+        color: #fff;
+        font-weight: 500;
+        }
+
+        #big-flex{
+            position: absolute;
+            margin: 5px 0;
+            height: 55vh;
+            width: 100%;
+            background: #ffffff00;
+            backdrop-filter: blur(8px);
+            top: 40%;
+            left: 50%;
+            box-shadow: 0px 0px 14px #ffffff;
+            border-radius: 20px;
+            transform: translateX(-50%);
+        }
+        #big-flex .support{
+            position: relative;
+            height: 15vh;
+            width: 98%;
+            margin: 0 auto;
+            background: #f5e6d100;
+            top: 2%;
+            box-shadow: 0px 0px 10px #040404;
+            border-radius: 20px;
+            transition: background 0.5s ease-in-out ;
+        }
+        #big-flex .support>p{
+                color: #fff;
+                text-align: center;
+                padding-top: 0px;
+                font-size: 1rem;
+        }
+
+        #big-flex .tagname{
+                position: relative;
+            height: 10vh;
+            width: 98%;
+            margin: 0px auto;
+            background: #f5e6d100;
+            top: 4%;
+            box-shadow: 0px 0px 10px #000;
+            border-radius: 20px;
+            transition: background 0.3s ease-in-out ;
+        }
+        #big-flex .tagname p{
+            text-align: center;
+            font-size: 1rem;
+            color: #fff;
+        }
+            
+        .tagname p span i{
+            display: inline-block;
+            position: relative;
+            top: 10px;
+             font-size: 1.8rem;
+             margin-top:px;
+             
+        }
+        #flex-container{
+            position: relative;
+            height:27vh;
+            top:3%;
+            width: 98%;
+            margin: auto;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            overflow: hidden;
+            
+        }
+        #flex-container .contact-us{
+            background-color: #ffde59;
+            position: relative;
+            left: 0%;
+            width: 60%;
+            height:80%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px #000;
+        
+        }
+        
+        #flex-container .contact-us .image{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            background-image: url('./Contact\ us!.png');
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 40px;
+            width: 120px;
+            overflow: hidden;
+            transform: translateX(-50%);
+            
+        }
+        #flex-container .contact-us img{
+            display: none;
+        
+        }
+        #flex-container .contact-us .online{
+            position: absolute;
+            bottom: 2%;
+            left: 0;
+            width: 100%;
+            
+            }
+            .contact-us .online span{
+                display: block;
+                text-align: center;
+                margin-left: 4px;
+            }
+            .online span a{
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 0.75rem;
+                
+            }
+            #flex-container .socialMedia{
+                position: relative;
+                left: 0%;
+                width: 35%;
+                height:80%;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0px 0px 8px #000;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap:5px;
+                grid-template-areas:   "a b"
+                                       "c d";
+            }
+            .socialMedia .whatsapp{
+                grid-area: a;
+            }
+            .socialMedia .facebook{
+                grid-area: b;
+            }
+            .socialMedia .instagram{
+                grid-area: c;
+            }
+            .socialMedia .twitter{
+                grid-area: d;
+            }
+            .socialMedia a{
+                display: block;
+                font-size: 2.9rem;
+                text-align: center;
+            }
+            
+            #complement{
+                width: 100%;
+                /* display: flex;
+                flex-wrap: wrap;
+                flex-direction: row; */
+                
+            }
+            #complement>p{
+                margin: 30px 0 0 0;
+                font-size: 0.98 rem;
+                color: #ffffff;
+                text-shadow: 0px 0px 5px #ffffff;
+            }
+            
+            #complement .star {
+            margin: 30px 0 0 10px;
+               font-size: 1rem;
+               color: white;
+               display: flex;
+               cursor: pointer;
+               flex-direction: row; 
+               flex-wrap: wrap;
+            }
+            #complement .star .green{
+                color:#f6ea05e0;
+                text-shadow: 0px 0px 4px #f6ea05;
+            }
+
+
+
+
+
+
+
+
+
+
+
+  }
+  
+  
+  /* Styles for tablets (768px to 1023px) */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CSS styles for tablets */
+  }
+  
+  /* Styles for desktops and laptops (1024px and above) */
+  @media screen and (min-width: 1024px) {
+    /* CSS styles for desktops and laptops */
+  }
